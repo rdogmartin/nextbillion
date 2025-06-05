@@ -1,0 +1,19 @@
+@WebApi_HostAddress = http://localhost:5245
+
+GET {{WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{WebApi_HostAddress}}/route/5829b3740f69e257b23aba7b97ad12e4
+Accept: application/json
+
+###
+
+POST {{WebApi_HostAddress}}/route
+Content-Type: application/json
+Accept: application/json
+
+<@ ./SampleInputs/basic-route-optimization.json
+
+###
