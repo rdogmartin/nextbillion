@@ -2,14 +2,14 @@ using System.Text.Json.Serialization;
 
 namespace NextBillion.Models;
 
-public record RouteOptimizationResult(
+public record class RouteOptimizationResult(
     [property: JsonPropertyName("description")] string Description,
     [property: JsonPropertyName("result")] RouteResult Result,
     [property: JsonPropertyName("status")] string Status,
     [property: JsonPropertyName("message")] string Message
 );
 
-public record RouteResult(
+public record class RouteResult(
     [property: JsonPropertyName("code")] int Code,
     [property: JsonPropertyName("summary")] RouteSummary Summary,
     [property: JsonPropertyName("unassigned")] UnassignedJob[] Unassigned,
@@ -18,7 +18,7 @@ public record RouteResult(
     [property: JsonPropertyName("error")] string? Error
 );
 
-public record RouteSummary(
+public record class RouteSummary(
     [property: JsonPropertyName("cost")] decimal Cost,
     [property: JsonPropertyName("routes")] int Routes,
     [property: JsonPropertyName("unassigned")] int Unassigned,
@@ -35,7 +35,7 @@ public record RouteSummary(
     [property: JsonPropertyName("num_late_visits")] int? NumLateVisits
 );
 
-public record UnassignedJob(
+public record class UnassignedJob(
     [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("type")] string Type,
     [property: JsonPropertyName("location")] decimal[] Location,
@@ -43,7 +43,7 @@ public record UnassignedJob(
     [property: JsonPropertyName("outsourcing_cost")] decimal? OutsourcingCost
 );
 
-public record OptimizedRoute(
+public record class OptimizedRoute(
     [property: JsonPropertyName("vehicle")] int Vehicle,
     [property: JsonPropertyName("cost")] decimal Cost,
     [property: JsonPropertyName("steps")] RouteStep[] Steps,
@@ -64,7 +64,7 @@ public record OptimizedRoute(
     [property: JsonPropertyName("internal_id")] int InternalId
 );
 
-public record RouteStep(
+public record class RouteStep(
     [property: JsonPropertyName("id")] int? Id,
     [property: JsonPropertyName("type")] string Type,
     [property: JsonPropertyName("arrival")] long Arrival,

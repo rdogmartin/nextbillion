@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace NextBillion.Models;
 
-public record RouteOptimizationRequest(
+public record class RouteOptimizationRequest(
     [property: JsonPropertyName("description")] string Description,
     [property: JsonPropertyName("jobs")] Job[] Jobs,
     [property: JsonPropertyName("shipments")] Shipment[] Shipments,
@@ -11,7 +11,7 @@ public record RouteOptimizationRequest(
     [property: JsonPropertyName("locations")] Locations Locations
 );
 
-public record Job(
+public record class Job(
     [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("location_index")] int LocationIndex,
     [property: JsonPropertyName("service")] int Service,
@@ -20,34 +20,34 @@ public record Job(
     [property: JsonPropertyName("time_windows")] long[][] TimeWindows
 );
 
-public record Shipment(
+public record class Shipment(
     [property: JsonPropertyName("pickup")] ShipmentPickup Pickup,
     [property: JsonPropertyName("delivery")] ShipmentDelivery Delivery,
     [property: JsonPropertyName("skills")] int[] Skills,
     [property: JsonPropertyName("amount")] int[] Amount
 );
 
-public record ShipmentPickup(
+public record class ShipmentPickup(
     [property: JsonPropertyName("description")] string Description,
     [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("location_index")] int LocationIndex,
     [property: JsonPropertyName("time_windows")] long[][] TimeWindows
 );
 
-public record ShipmentDelivery(
+public record class ShipmentDelivery(
     [property: JsonPropertyName("description")] string Description,
     [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("location_index")] int LocationIndex,
     [property: JsonPropertyName("time_windows")] long[][] TimeWindows
 );
 
-public record Depot(
+public record class Depot(
     [property: JsonPropertyName("description")] string Description,
     [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("location_index")] int LocationIndex
 );
 
-public record Vehicle(
+public record class Vehicle(
     [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("start_index")] int? StartIndex,
     [property: JsonPropertyName("depot")] int? Depot,
@@ -56,7 +56,7 @@ public record Vehicle(
     [property: JsonPropertyName("time_window")] long[] TimeWindow
 );
 
-public record Locations(
+public record class Locations(
     [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("location")] string[] Location
 );
