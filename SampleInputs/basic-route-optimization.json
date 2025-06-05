@@ -7,12 +7,7 @@
            "service": 120,
            "pickup":[1],
            "skills": [1],
-           "time_windows": [
-               [
-                   1693393200,
-                   1693394100
-               ]
-           ]
+           "time_windows": [[1693393200, 1693394100]]
        },
        {
            "id": 2,
@@ -20,12 +15,7 @@
            "service": 120,
            "skills": [1],
            "pickup":[1],
-           "time_windows": [
-               [
-                   1693387800,
-                   1693388700
-               ]
-           ]
+           "time_windows": [[1693387800, 1693388700]]
        },
        {
            "id": 3,
@@ -33,12 +23,7 @@
            "service": 120,
            "pickup":[1],
            "skills": [2],
-           "time_windows": [
-               [
-                   1693396800,
-                   1693397700
-               ]
-           ]
+           "time_windows": [[1693396800, 1693397700]]
        },
        {
            "id": 4,
@@ -46,12 +31,7 @@
            "service": 120,
            "skills": [1],
            "pickup":[1],
-           "time_windows": [
-               [
-                   1693402200,
-                   1693403100
-               ]
-           ]
+           "time_windows": [[1693402200, 1693403100]]
        },
        {
            "id": 5,
@@ -59,12 +39,7 @@
            "service": 120,
            "skills": [2],
            "pickup":[1],
-           "time_windows": [
-               [
-                   1693400400,
-                   1693401300
-               ]
-           ]
+           "time_windows": [[1693400400, 1693401300]]
        }
    ],
    "shipments": [
@@ -73,14 +48,14 @@
            "description": "Shipment Pickup 1",
            "id":1,
            "location_index":5,
-	"time_windows":[[1693397400,1693397760]]
+	        "time_windows":[[1693397400,1693397760]]
         },
         "delivery":{
            "description": "Shipment Delivery 1",
            "id":1,
            "location_index":6,
-"time_windows":[[1693400700,1693401300]]
-           },
+            "time_windows":[[1693400700,1693401300]]
+        },
         "skills":[2,3],
         "amount":[3]
         },
@@ -114,11 +89,7 @@
            "start_index": 10,
            "skills":[1],
            "capacity":[10],
-           "time_window": [
-               1693382400,
-                   1693411200
-           ]
-           
+           "time_window": [1693382400, 1693411200]
        },
        {
            "id": 2,
@@ -127,10 +98,7 @@
                2,3
            ],
            "capacity":[10],
-           "time_window": [
-               1693382400,
-            1693411200
-           ]
+           "time_window": [1693382400, 1693411200]
        }
    ],
     "locations":
