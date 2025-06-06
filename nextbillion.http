@@ -5,15 +5,26 @@ Accept: application/json
 
 ###
 
-GET {{WebApi_HostAddress}}/route/5829b3740f69e257b23aba7b97ad12e4
+GET {{WebApi_HostAddress}}/route/b315fa7894e7fa91831ca10d8a50b944
 Accept: application/json
 
 ###
+// POST request corresponding to the example at
+// https://docs.nextbillion.ai/optimization/route-optimization-api/tutorials/basic-route-optimization
 
 POST {{WebApi_HostAddress}}/route
 Content-Type: application/json
 Accept: application/json
 
 <@ ./SampleInputs/basic-route-optimization.json
+
+###
+// Scenario 1: 10 jobs on June 10, 2025, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
+
+POST {{WebApi_HostAddress}}/route
+Content-Type: application/json
+Accept: application/json
+
+<@ ./SampleInputs/scenario-01.json
 
 ###

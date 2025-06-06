@@ -2,7 +2,7 @@
    "description": "Basic Route Optimization Example",
    "jobs": [
        {
-           "id": 1,
+           "id": "1",
            "location_index": 0,
            "service": 120,
            "pickup":[1],
@@ -10,7 +10,7 @@
            "time_windows": [[1693393200, 1693394100]]
        },
        {
-           "id": 2,
+           "id": "2",
            "location_index": 1,
            "service": 120,
            "skills": [1],
@@ -18,7 +18,7 @@
            "time_windows": [[1693387800, 1693388700]]
        },
        {
-           "id": 3,
+           "id": "3",
            "location_index": 2,
            "service": 120,
            "pickup":[1],
@@ -26,7 +26,7 @@
            "time_windows": [[1693396800, 1693397700]]
        },
        {
-           "id": 4,
+           "id": "4",
            "location_index": 3,
            "service": 120,
            "skills": [1],
@@ -34,7 +34,7 @@
            "time_windows": [[1693402200, 1693403100]]
        },
        {
-           "id": 5,
+           "id": "5",
            "location_index": 4,
            "service": 120,
            "skills": [2],
@@ -46,13 +46,13 @@
        {
         "pickup":{
            "description": "Shipment Pickup 1",
-           "id":1,
+           "id":"1",
            "location_index":5,
 	        "time_windows":[[1693397400,1693397760]]
         },
         "delivery":{
            "description": "Shipment Delivery 1",
-           "id":1,
+           "id":"1",
            "location_index":6,
             "time_windows":[[1693400700,1693401300]]
         },
@@ -62,13 +62,13 @@
         {
          "pickup":{
            "description": "Shipment Pickup 2",
-           "id":2,
+           "id":"2",
            "location_index":7,
            "time_windows":[[1693429200,1693430100]]
         },
         "delivery":{
            "description": "Shipment Delivery 2",
-           "id":2,
+           "id":"2",
            "location_index":8,
            "time_windows":[[1693432800,1693433700]]
         },
@@ -79,21 +79,21 @@
    "depots": [
        {
            "description":"Depot 1",
-           "id":0,
+           "id":"0",
            "location_index":9
        }
    ],
    "vehicles": [
        {
-           "id": 1,
+           "id": "1",
            "start_index": 10,
            "skills":[1],
            "capacity":[10],
            "time_window": [1693382400, 1693411200]
        },
        {
-           "id": 2,
-           "depot": 0,
+           "id": "2",
+           "start_depot_ids": ["0"],
            "skills": [
                2,3
            ],

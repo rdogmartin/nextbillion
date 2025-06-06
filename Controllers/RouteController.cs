@@ -18,24 +18,22 @@ public class RouteController : ControllerBase
     {
         _logger = logger;
         _httpClient = httpClient;
-    }
-
-    [HttpPost()]
+    }    [HttpPost()]
     public async Task<ActionResult<RouteOptimizationRequestResponse>> Post([FromBody] RouteOptimizationRequest request)
     {
         var json = JsonSerializer.Serialize(request);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
         var response = await _httpClient.PostAsync($"{BaseUrl}?key={ApiKey}", content);
-
         if (response.IsSuccessStatusCode)
         {
             var responseData = await response.Content.ReadAsStringAsync();
-            var result = JsonSerializer.Deserialize<RouteOptimizationRequestResponse>(responseData);
+            var result = JsonSerializer.Deserialize<RouteOptimizationRequestResponse>(responseData) ?? new RouteOptimizationRequestResponse(string.Empty, "Could not deserialize response", "JSON Parse Error");
+
             return Ok(result);
         }
 
-        return BadRequest();
+        return await CreateErrorResponse(response);
     }
 
     [HttpGet("{id}")]
@@ -48,10 +46,24 @@ public class RouteController : ControllerBase
         if (response.IsSuccessStatusCode)
         {
             var responseData = await response.Content.ReadAsStringAsync();
+            // We assume the response contains the optimized route. If it is not complete, we will get back message: "Job still processing".
+            // Prod code will need to handle this case.
             var result = JsonSerializer.Deserialize<RouteOptimizationResult>(responseData);
             return Ok(result);
         }
 
-        return BadRequest();
+        return await CreateErrorResponse(response);
+    }
+
+    private async Task<BadRequestObjectResult> CreateErrorResponse(HttpResponseMessage response)
+    {
+        var errorResponse = new
+        {
+            error = "nextbillion.ai API request failed",
+            statusCode = (int)response.StatusCode,
+            statusText = response.ReasonPhrase,
+            details = await response.Content.ReadAsStringAsync()
+        };
+        return BadRequest(errorResponse);
     }
 }

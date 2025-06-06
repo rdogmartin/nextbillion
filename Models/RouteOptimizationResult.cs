@@ -36,7 +36,7 @@ public record class RouteSummary(
 );
 
 public record class UnassignedJob(
-    [property: JsonPropertyName("id")] int Id,
+    [property: JsonPropertyName("id")] string Id,
     [property: JsonPropertyName("type")] string Type,
     [property: JsonPropertyName("location")] decimal[] Location,
     [property: JsonPropertyName("reason")] string Reason,
@@ -44,7 +44,7 @@ public record class UnassignedJob(
 );
 
 public record class OptimizedRoute(
-    [property: JsonPropertyName("vehicle")] int Vehicle,
+    [property: JsonPropertyName("vehicle")] string Vehicle,
     [property: JsonPropertyName("cost")] decimal Cost,
     [property: JsonPropertyName("steps")] RouteStep[] Steps,
     [property: JsonPropertyName("description")] string Description,
@@ -64,8 +64,12 @@ public record class OptimizedRoute(
     [property: JsonPropertyName("internal_id")] int InternalId
 );
 
+/// <summary>
+/// Represents a step in an optimized route.
+/// </summary>
+/// <param name="Id">The identifier for this route step. Uses StringOrInt type because the API may return either a string or integer value depending on the context.</param>
 public record class RouteStep(
-    [property: JsonPropertyName("id")] int? Id,
+    [property: JsonPropertyName("id")] StringOrInt Id,
     [property: JsonPropertyName("type")] string Type,
     [property: JsonPropertyName("arrival")] long Arrival,
     [property: JsonPropertyName("duration")] decimal Duration,
