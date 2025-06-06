@@ -5,7 +5,7 @@ Accept: application/json
 
 ###
 
-GET {{WebApi_HostAddress}}/route/b315fa7894e7fa91831ca10d8a50b944
+GET {{WebApi_HostAddress}}/route/ad18c57a67f067609ed8dbf3070c4290
 Accept: application/json
 
 ###
@@ -26,5 +26,14 @@ Content-Type: application/json
 Accept: application/json
 
 <@ ./SampleInputs/scenario-01.json
+
+###
+// Scenario 2: 10 jobs on June 10, 2025, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
+
+POST {{WebApi_HostAddress}}/route
+Content-Type: application/json
+Accept: application/json
+
+<@ ./SampleInputs/scenario-02.json
 
 ###
