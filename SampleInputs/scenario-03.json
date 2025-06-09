@@ -1,5 +1,5 @@
 {
-   "description": "Scenario 2: 10 jobs on June 10, 2025, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
+   "description": "Scenario 3: 10 jobs on June 10, 2025, no time windows on jobs, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
    "jobs": [
        {
            "id": "2",
@@ -7,7 +7,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749574800, 1749582000]]
+           "time_windows": [[1749560400, 1749614400]]
        },
        {
            "id": "3",
@@ -15,7 +15,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749571200, 1749574800]]
+           "time_windows": [[1749560400, 1749614400]]
        },
        {
            "id": "4",
@@ -23,7 +23,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749582000, 1749589200]]
+           "time_windows": [[1749560400, 1749614400]]
        },
        {
            "id": "5",
@@ -31,7 +31,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749564000, 1749571200]]
+           "time_windows": [[1749560400, 1749614400]]
        },
        {
            "id": "6",
@@ -39,7 +39,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749600000, 1749603600]]
+           "time_windows": [[1749560400, 1749614400]]
        },
        {
            "id": "7",
@@ -47,7 +47,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749592800, 1749600000]]
+           "time_windows": [[1749560400, 1749614400]]
        },
        {
            "id": "8",
@@ -55,7 +55,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749610800, 1749614400]]
+           "time_windows": [[1749560400, 1749614400]]
        },
        {
            "id": "9",
@@ -63,7 +63,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749603600, 1749610800]]
+           "time_windows": [[1749560400, 1749614400]]
        },
        {
            "id": "10",
@@ -71,7 +71,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749589200, 1749592800]]
+           "time_windows": [[1749560400, 1749614400]]
        },
        {
            "id": "11",
@@ -79,7 +79,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749560400, 1749564000]]
+           "time_windows": [[1749560400, 1749614400]]
        }
    ],
    "shipments": [
