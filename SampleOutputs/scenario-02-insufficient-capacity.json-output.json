@@ -1,0 +1,273 @@
+{
+  "description": "Scenario 2b (Too many jobs to fit within constraints): 10 jobs on June 10, 2025, 3-hr time windows on jobs, 3-hr duraction, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
+  "result": {
+    "code": 0,
+    "summary": {
+      "cost": 1978,
+      "routes": 1,
+      "unassigned": 7,
+      "duration": 1978,
+      "distance": 14022,
+      "setup": 0,
+      "service": 32400,
+      "waiting_time": 0,
+      "priority": 0,
+      "delivery": null,
+      "pickup": null,
+      "revenue": null,
+      "total_visit_lateness": null,
+      "num_late_visits": null
+    },
+    "unassigned": [
+      {
+        "id": "3",
+        "type": "job",
+        "location": [
+          39.967318,
+          -105.252806
+        ],
+        "reason": "cannot be served due to time window constraints in task or vehicles",
+        "outsourcing_cost": null
+      },
+      {
+        "id": "2",
+        "type": "job",
+        "location": [
+          40.068497,
+          -105.288575
+        ],
+        "reason": "cannot be served due to time window constraints in task or vehicles",
+        "outsourcing_cost": null
+      },
+      {
+        "id": "4",
+        "type": "job",
+        "location": [
+          39.989159,
+          -105.246724
+        ],
+        "reason": "cannot be served due to time window constraints in task or vehicles",
+        "outsourcing_cost": null
+      },
+      {
+        "id": "5",
+        "type": "job",
+        "location": [
+          40.014091,
+          -105.136259
+        ],
+        "reason": "cannot be served due to time window constraints in task or vehicles",
+        "outsourcing_cost": null
+      },
+      {
+        "id": "6",
+        "type": "job",
+        "location": [
+          39.975553,
+          -105.159323
+        ],
+        "reason": "cannot be served due to time window constraints in task or vehicles",
+        "outsourcing_cost": null
+      },
+      {
+        "id": "9",
+        "type": "job",
+        "location": [
+          40.018777,
+          -105.279057
+        ],
+        "reason": "cannot be served due to time window constraints in task or vehicles",
+        "outsourcing_cost": null
+      },
+      {
+        "id": "10",
+        "type": "job",
+        "location": [
+          40.020195,
+          -105.280964
+        ],
+        "reason": "cannot be served due to time window constraints in task or vehicles",
+        "outsourcing_cost": null
+      }
+    ],
+    "routes": [
+      {
+        "vehicle": "1",
+        "cost": 1978,
+        "steps": [
+          {
+            "id": 0,
+            "type": "start",
+            "arrival": 1749570814,
+            "duration": 0,
+            "location": [
+              40.016588,
+              -105.224365
+            ],
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 0,
+            "snapped_location": [
+              40.01684,
+              -105.22438
+            ],
+            "run": null,
+            "depot": "0",
+            "internal_id": null
+          },
+          {
+            "id": "8",
+            "type": "job",
+            "arrival": 1749571200,
+            "duration": 386,
+            "location": [
+              40.01513,
+              -105.247494
+            ],
+            "projected_location": null,
+            "location_index": 7,
+            "load": null,
+            "service": 10800,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 2362,
+            "snapped_location": [
+              40.01521,
+              -105.24714
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 1024243015
+          },
+          {
+            "id": 1,
+            "type": "break",
+            "arrival": 1749582000,
+            "duration": 386,
+            "location": null,
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": "Lunch Break",
+            "distance": 2362,
+            "snapped_location": null,
+            "run": null,
+            "depot": null,
+            "internal_id": 1
+          },
+          {
+            "id": "11",
+            "type": "job",
+            "arrival": 1749582603,
+            "duration": 989,
+            "location": [
+              40.043212,
+              -105.252655
+            ],
+            "projected_location": null,
+            "location_index": 10,
+            "load": null,
+            "service": 10800,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 7274,
+            "snapped_location": [
+              40.04309,
+              -105.25266
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 485174231
+          },
+          {
+            "id": "7",
+            "type": "job",
+            "arrival": 1749593866,
+            "duration": 1452,
+            "location": [
+              40.024973,
+              -105.251153
+            ],
+            "projected_location": null,
+            "location_index": 6,
+            "load": null,
+            "service": 10800,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 10581,
+            "snapped_location": [
+              40.02513,
+              -105.25111
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 839689206
+          },
+          {
+            "id": 0,
+            "type": "end",
+            "arrival": 1749605192,
+            "duration": 1978,
+            "location": [
+              40.016588,
+              -105.224365
+            ],
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 14022,
+            "snapped_location": [
+              40.01684,
+              -105.22438
+            ],
+            "run": null,
+            "depot": "0",
+            "internal_id": null
+          }
+        ],
+        "description": null,
+        "distance": 14022,
+        "duration": 1978,
+        "geometry": "gxfsFjsfaSAuAh@@R?j@?R?z@BH?H?P?fEA@Z?n@?p@AL?d@A~A?`@?z@?`A?X?v@?l@?f@?@?tB?pB?rA?tB?~@ArB?xC?h@A`AAtBCxDArB?xA?TA~@?tAAvA@~A?x@?nA?R?hA@~@C~C@~C?F?^@ZBt@FxABx@DpB?T?V?jBBr@@n@AV@R?PAX@bABz@?b@AnB@rA?b@?r@?L?X?^?|AArBERERELCHKH[HKA[KGCKXMZW^KHOHDLDRAJb@A\\?]?c@@@KESEMNIJIV_@L[NHRFP@TLHFFJDJBFBNH^A`A?b@?f@AX?R?~@AhA?^?R?hA?t@ArA?jC?L?vA?fB?zA?vA?`@?L?p@?RM\\EJ?BA?A@A@??A@C@E@YJSAOA]Cg@?uA?a@?O?}@?U?M?o@?Q?M@}@?W?m@?_@?k@?a@?OAw@?e@?oAAaBAw@AM@u@Aa@?y@@E?eABO?Q?[@O?cB@eA?eACmAEW?S?k@BW?U?w@?cB@WLYBQ?m@?S?]?S?u@AY?g@AM?Y?{@?I?]?S?K?y@?k@?aA?s@?e@?k@?Q?O?_A@[?QAyA@_@?_C?wB?cE@M?O?UA{@@_@?Q?uC?M?K?iA?mA?[?k@?O?oBAK?s@@Q?m@?s@AaB@a@?u@B{@B[BWJBV?HBPR~AL|@Jp@VxA\\zAVdARp@^tAJZJ^`@fC@F?FAF?BCFCFGFg@RmB?s@?qE@U?e@@UJW?q@@yA??U@sA?_@?_@?iA@q@?kB@{@?_G?YAaC?QCw@?gB[@mA?cA@k@?gA?[?KCQKMGOGOAm@@_B?[@MEKKCOAM?e@?d@@LBNJJLDZA~A?l@AN@NFLFPJJBZ?fA?j@?bAAlA?ZA?fBBv@?P@`C?X?~FAz@?jBAp@?hA?^?^ArA?TxA?p@AV?RNd@?V@JA~@?tB?j@?X?d@?|A?dAAP?ASAOC[EWIa@G[Ok@Mc@cAiD[kAU_AQy@O}@Ig@Gg@G]CSGe@I{@Ge@C_@ZCz@Ct@C`@?`BAr@@l@?P?r@AJ?nB@N?j@?Z?lA?hA?J?L?tC?P?^?z@AT@N?L?bEAvB?~B?^?xAAP@Z?~@AN?P?j@?d@?r@?`A?Ac@?{@?iB?}B?O?_@?M@oCr@?dC@p@@t@?dAAHCZ?H?HBHBFBJDHFTRDO?E?DENDHLNXr@HPP\\V\\NLB@HFNFLBR?VAdBKMgAFYEiA?i@@[@_@Hy@Lu@Tq@Ti@J[FYFW^{BV_DF}A?s@@gC?IAoAFS@C@EDIBGBEDGBCBCRINCFAHAHCb@Wt@i@h@c@NKBCFCl@]d@On@[^Ih@Kh@KjAe@JEh@Ud@Wd@UbB_AjAs@zFiDzA}@NIrBoAZS\\SBA`@Sn@Wb@Sd@QXMVMPGLE?W?UE_B?ICu@CwAC{@Ak@AYCwC?_D?_A?a@A}@?u@?oD?yA?qC@aA?m@?oAD}E@}C@aF@aCAq@?aA?w@?O?_A?{B@q@?a@?i@?a@Ag@?c@?Q?WAm@?U@y@@a@OAK@mBAoA?MA_@?mBBcA@AOCqD",
+        "pickup": null,
+        "delivery": null,
+        "priority": 0,
+        "service": 32400,
+        "vehicle_overtime": null,
+        "waiting_time": 0,
+        "setup": 0,
+        "revenue": null,
+        "profile": "default",
+        "adopted_capacity": null,
+        "internal_id": 873244444
+      }
+    ],
+    "routing_profiles": {
+      "default": {}
+    },
+    "error": null
+  },
+  "status": "Ok",
+  "message": ""
+}

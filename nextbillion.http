@@ -5,7 +5,7 @@ Accept: application/json
 
 ###
 
-GET {{WebApi_HostAddress}}/route/ad18c57a67f067609ed8dbf3070c4290
+GET {{WebApi_HostAddress}}/route/0586c123a2cd9d385bf813f0a3efe3c7
 Accept: application/json
 
 ###
@@ -25,7 +25,7 @@ POST {{WebApi_HostAddress}}/route
 Content-Type: application/json
 Accept: application/json
 
-<@ ./SampleInputs/scenario-01.json
+<@ ./SampleInputs/scenario-02-insufficient-capacity.json
 
 ###
 // Scenario 2: 10 jobs on June 10, 2025, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
@@ -34,6 +34,6 @@ POST {{WebApi_HostAddress}}/route
 Content-Type: application/json
 Accept: application/json
 
-<@ ./SampleInputs/scenario-02.json
+<@ ./SampleInputs/scenario-03.json
 
 ###
