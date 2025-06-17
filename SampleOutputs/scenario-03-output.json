@@ -1,5 +1,5 @@
 {
-  "description": "Scenario 3: 10 jobs on June 10, 2025, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
+  "description": "Scenario 3: 10 jobs on June 10, 2025, time window 7am-11pm on all jobs, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
   "result": {
     "code": 0,
     "summary": {

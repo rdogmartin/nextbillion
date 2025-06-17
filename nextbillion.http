@@ -5,7 +5,7 @@ Accept: application/json
 
 ###
 
-GET {{WebApi_HostAddress}}/route/0586c123a2cd9d385bf813f0a3efe3c7
+GET {{WebApi_HostAddress}}/route/de31330fea06e161748df252267ee486
 Accept: application/json
 
 ###
@@ -16,24 +16,51 @@ POST {{WebApi_HostAddress}}/route
 Content-Type: application/json
 Accept: application/json
 
-<@ ./SampleInputs/basic-route-optimization.json
+<@ ./SampleInputs/scenario-01-simplest.json
 
 ###
-// Scenario 1: 10 jobs on June 10, 2025, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
+// Scenario 2: 10 jobs on June 10, 2025, 1 or 2-hr time windows, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
 
 POST {{WebApi_HostAddress}}/route
 Content-Type: application/json
 Accept: application/json
 
-<@ ./SampleInputs/scenario-02-insufficient-capacity.json
+<@ ./SampleInputs/scenario-02.json
 
 ###
-// Scenario 2: 10 jobs on June 10, 2025, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
+// Scenario 3: 10 jobs on June 10, 2025, time window 7am-11pm on all jobs, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
 
 POST {{WebApi_HostAddress}}/route
 Content-Type: application/json
 Accept: application/json
 
 <@ ./SampleInputs/scenario-03.json
+
+###
+// Scenario 4: 10 jobs on June 10, 2025, 1 or 2-hr time windows, 3 vehicles, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
+
+POST {{WebApi_HostAddress}}/route
+Content-Type: application/json
+Accept: application/json
+
+<@ ./SampleInputs/scenario-04.json
+
+###
+// Scenario 5: 10 jobs on June 10, 2025, 1st 8 jobs pre-assigned to routes, 1 or 2-hr time windows, 3 vehicles, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
+
+POST {{WebApi_HostAddress}}/route
+Content-Type: application/json
+Accept: application/json
+
+<@ ./SampleInputs/scenario-05.json
+
+###
+// Scenario 6: 10 jobs on June 10, 2025, 1 or 2-hr time windows, 3 vehicles, 2, 3 or 4 max jobs per vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments
+
+POST {{WebApi_HostAddress}}/route
+Content-Type: application/json
+Accept: application/json
+
+<@ ./SampleInputs/scenario-06.json
 
 ###

@@ -11,6 +11,7 @@ public record class RouteOptimizationRequest(
     [property: JsonPropertyName("description")] public string Description { get; init; } = string.Empty;
     [property: JsonPropertyName("shipments")] public Shipment[] Shipments { get; init; } = [];
     [property: JsonPropertyName("depots")] public Depot[] Depots { get; init; } = [];
+    [property: JsonPropertyName("relations")] public Relation[] Relations { get; init; } = [];
 }
 
 public record class Job(
@@ -70,6 +71,8 @@ public record class Break(
 
 public record class Vehicle([property: JsonPropertyName("id")] string Id)
 {
+    [property: JsonPropertyName("description")] public string Description { get; init; } = string.Empty;
+    [property: JsonPropertyName("max_tasks")] public int? MaxTasks { get; init; } = null;
     [property: JsonPropertyName("start_index")] public int? StartIndex { get; init; } = null;
     [property: JsonPropertyName("start_depot_ids")] public string[] StartDepotIds { get; init; } = [];
     [property: JsonPropertyName("end_depot_ids")] public string[] EndDepotIds { get; init; } = [];
@@ -82,4 +85,17 @@ public record class Vehicle([property: JsonPropertyName("id")] string Id)
 public record class Locations(
     [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("location")] string[] Location
+);
+
+public record class Relation(
+    [property: JsonPropertyName("type")] string Type,
+    [property: JsonPropertyName("steps")] RelationStep[] Steps
+)
+{
+    [property: JsonPropertyName("vehicle")] public string Vehicle { get; init; } = string.Empty;
+}
+
+public record class RelationStep(
+    [property: JsonPropertyName("type")] string Type,
+    [property: JsonPropertyName("id")] string Id
 );

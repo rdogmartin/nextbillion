@@ -1,5 +1,5 @@
 {
-   "description": "Scenario 2: 10 jobs on June 10, 2025, 1 or 2-hr time windows, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
+   "description": "Scenario 4: 10 jobs on June 10, 2025, 1st 5 jobs fixed to 30-min time windows, remaining jobs 1 or 2-hr time windows, 3 vehicles, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
    "jobs": [
        {
            "id": "2",
@@ -7,7 +7,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749574800, 1749582000]]
+           "time_windows": [[1749574800, 1749576600]]
        },
        {
            "id": "3",
@@ -15,7 +15,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749571200, 1749574800]]
+           "time_windows": [[1749571200, 1749573000]]
        },
        {
            "id": "4",
@@ -23,7 +23,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749582000, 1749589200]]
+           "time_windows": [[1749582000, 1749583800]]
        },
        {
            "id": "5",
@@ -31,7 +31,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749564000, 1749571200]]
+           "time_windows": [[1749564000, 1749565800]]
        },
        {
            "id": "6",
@@ -39,7 +39,7 @@
            "service": 1800,
            "pickup": [],
            "skills": [],
-           "time_windows": [[1749600000, 1749603600]]
+           "time_windows": [[1749600000, 1749601800]]
        },
        {
            "id": "7",
@@ -94,6 +94,38 @@
    "vehicles": [
        {
            "id": "1",
+           "start_depot_ids": ["0"],
+           "end_depot_ids": ["0"],
+           "capacity": [],
+           "skills": [],
+           "time_window": [1749560400, 1749614400],
+           "breaks": [
+            {
+                "id": 1,
+                "description": "Lunch Break",
+                "service": 1800,
+                "time_windows": [[1749578400, 1749582000]]
+            }
+           ]
+       },
+       {
+           "id": "2",
+           "start_depot_ids": ["0"],
+           "end_depot_ids": ["0"],
+           "capacity": [],
+           "skills": [],
+           "time_window": [1749560400, 1749614400],
+           "breaks": [
+            {
+                "id": 1,
+                "description": "Lunch Break",
+                "service": 1800,
+                "time_windows": [[1749578400, 1749582000]]
+            }
+           ]
+       },
+       {
+           "id": "3",
            "start_depot_ids": ["0"],
            "end_depot_ids": ["0"],
            "capacity": [],

@@ -1,5 +1,5 @@
 {
-   "description": "Scenario 2: 10 jobs on June 10, 2025, 1 or 2-hr time windows, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
+   "description": "Scenario 6: 10 jobs on June 10, 2025, 1 or 2-hr time windows, 3 vehicles, 2, 3 or 4 max jobs per vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
    "jobs": [
        {
            "id": "2",
@@ -94,11 +94,49 @@
    "vehicles": [
        {
            "id": "1",
+           "description": "Vehicle 1 (max 2 jobs)",
            "start_depot_ids": ["0"],
            "end_depot_ids": ["0"],
            "capacity": [],
            "skills": [],
            "time_window": [1749560400, 1749614400],
+           "max_tasks": 2,
+           "breaks": [
+            {
+                "id": 1,
+                "description": "Lunch Break",
+                "service": 1800,
+                "time_windows": [[1749578400, 1749582000]]
+            }
+           ]
+       },
+       {
+           "id": "2",
+           "description": "Vehicle 2 (max 3 jobs)",
+           "start_depot_ids": ["0"],
+           "end_depot_ids": ["0"],
+           "capacity": [],
+           "skills": [],
+           "time_window": [1749560400, 1749614400],
+           "max_tasks": 3,
+           "breaks": [
+            {
+                "id": 1,
+                "description": "Lunch Break",
+                "service": 1800,
+                "time_windows": [[1749578400, 1749582000]]
+            }
+           ]
+       },
+       {
+           "id": "3",
+           "description": "Vehicle 3 (max 4 jobs)",
+           "start_depot_ids": ["0"],
+           "end_depot_ids": ["0"],
+           "capacity": [],
+           "skills": [],
+           "time_window": [1749560400, 1749614400],
+           "max_tasks": 4,
            "breaks": [
             {
                 "id": 1,

@@ -1,5 +1,5 @@
 {
-   "description": "Scenario 2: 10 jobs on June 10, 2025, 1 or 2-hr time windows, 1 vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
+   "description": "Scenario 5: 10 jobs on June 10, 2025, 1st 8 jobs pre-assigned to routes, 1 or 2-hr time windows, 3 vehicles, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
    "jobs": [
        {
            "id": "2",
@@ -94,6 +94,41 @@
    "vehicles": [
        {
            "id": "1",
+           "description": "Vehicle 1",
+           "start_depot_ids": ["0"],
+           "end_depot_ids": ["0"],
+           "capacity": [],
+           "skills": [],
+           "time_window": [1749560400, 1749614400],
+           "breaks": [
+            {
+                "id": 1,
+                "description": "Lunch Break",
+                "service": 1800,
+                "time_windows": [[1749578400, 1749582000]]
+            }
+           ]
+       },
+       {
+           "id": "2",
+           "description": "Vehicle 2",
+           "start_depot_ids": ["0"],
+           "end_depot_ids": ["0"],
+           "capacity": [],
+           "skills": [],
+           "time_window": [1749560400, 1749614400],
+           "breaks": [
+            {
+                "id": 1,
+                "description": "Lunch Break",
+                "service": 1800,
+                "time_windows": [[1749578400, 1749582000]]
+            }
+           ]
+       },
+       {
+           "id": "3",
+           "description": "Vehicle 3",
            "start_depot_ids": ["0"],
            "end_depot_ids": ["0"],
            "capacity": [],
@@ -109,6 +144,52 @@
            ]
        }
    ],
+   "relations": [
+        {
+            "type": "in_same_route",
+            "steps": [
+                {
+                    "type": "job",
+                    "id": "2"
+                },
+                {
+                    "type": "job",
+                    "id": "3"
+                },
+                {
+                    "type": "job",
+                    "id": "4"
+                },
+                {
+                    "type": "job",
+                    "id": "5"
+                }
+            ],
+            "vehicle": "1"
+        },
+        {
+            "type": "in_same_route",
+            "steps": [
+                {
+                    "type": "job",
+                    "id": "6"
+                },
+                {
+                    "type": "job",
+                    "id": "7"
+                },
+                {
+                    "type": "job",
+                    "id": "8"
+                },
+                {
+                    "type": "job",
+                    "id": "9"
+                }
+            ],
+            "vehicle": "2"
+        }
+    ],
     "locations":
         {
             "id": 1,

@@ -1,0 +1,555 @@
+{
+  "description": "Scenario 6: 10 jobs on June 10, 2025, 1 or 2-hr time windows, 3 vehicles, 2, 3 or 4 max jobs per vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
+  "result": {
+    "code": 0,
+    "summary": {
+      "cost": 6088,
+      "routes": 3,
+      "unassigned": 1,
+      "duration": 6088,
+      "distance": 68463,
+      "setup": 0,
+      "service": 16200,
+      "waiting_time": 83321,
+      "priority": 0,
+      "delivery": null,
+      "pickup": null,
+      "revenue": null,
+      "total_visit_lateness": null,
+      "num_late_visits": null
+    },
+    "unassigned": [
+      {
+        "id": "3",
+        "type": "job",
+        "location": [
+          39.967318,
+          -105.252806
+        ],
+        "reason": "cannot be served due to max stops/tasks constraint",
+        "outsourcing_cost": null
+      }
+    ],
+    "routes": [
+      {
+        "vehicle": "1",
+        "cost": 1939,
+        "steps": [
+          {
+            "id": 0,
+            "type": "start",
+            "arrival": 1749570681,
+            "duration": 0,
+            "location": [
+              40.016588,
+              -105.224365
+            ],
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 0,
+            "snapped_location": [
+              40.01684,
+              -105.22438
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": null
+          },
+          {
+            "id": "5",
+            "type": "job",
+            "arrival": 1749571200,
+            "duration": 519,
+            "location": [
+              40.014091,
+              -105.136259
+            ],
+            "projected_location": null,
+            "location_index": 4,
+            "load": null,
+            "service": 1800,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 8083,
+            "snapped_location": [
+              40.01409,
+              -105.13648
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 806133968
+          },
+          {
+            "id": 1,
+            "type": "break",
+            "arrival": 1749573550,
+            "duration": 1069,
+            "location": null,
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 4850,
+            "setup": 0,
+            "late_by": null,
+            "description": "Lunch Break",
+            "distance": 8083,
+            "snapped_location": null,
+            "run": null,
+            "depot": null,
+            "internal_id": 1
+          },
+          {
+            "id": "6",
+            "type": "job",
+            "arrival": 1749578400,
+            "duration": 1069,
+            "location": [
+              39.975553,
+              -105.159323
+            ],
+            "projected_location": null,
+            "location_index": 5,
+            "load": null,
+            "service": 1800,
+            "waiting_time": 21600,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 15098,
+            "snapped_location": [
+              39.97566,
+              -105.15908
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 856466825
+          },
+          {
+            "id": 0,
+            "type": "end",
+            "arrival": 1749602670,
+            "duration": 1939,
+            "location": [
+              40.016588,
+              -105.224365
+            ],
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 26086,
+            "snapped_location": [
+              40.01684,
+              -105.22438
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": null
+          }
+        ],
+        "description": "Vehicle 1 (max 2 jobs)",
+        "distance": 26086,
+        "duration": 1939,
+        "geometry": "gxfsFjsfaSAuAh@@R?j@?R?z@BH?H?P?fEA@Z?n@?p@AL?d@A~A?`@J?L?@a@@y@?i@@a@?Q?O@q@?w@?U?[?W?gA?}@?g@?_AAaC?aA?k@?g@?sA@QAYAmC?s@?aB?Q?qA?kBA{DA_AEwDCeAA}@?G?O?O?O?E?[AQ?G?q@?w@?A?o@?uB?wB?kB?eB?CAeCB_C?O@iA?[Bm@?o@Bq@@q@?c@@iB?M?u@@]?K?W@OA}@@Y?eC@y@@wB?[AWA{@GMCiBA_@A_BAo@Au@?OAyG@qA?_@?{G?}@?WBmB?CDkE@w@?U?[@gBF{DAmBAcBGaHAoK?sF?oH?aA?cDAyACoBCoBDQCiG?iB@gBFyEBmBB}@?a@?y@@mB?mD?mA?aB?YAsA@sF?e@A_@?iAAcFGO?oD?i@?uD?A?uC?{O?mA?Q?c@?yC?[?e@?A?C?kA?s@?W?U?eQ?wQ?kE?iE?gL?qF?kK?qQ?W?O?oFA_M?aH?}@?mCBM@aE@I@iD?gDAuC?eBAqTL?N?Z?n@Ao@@[?O?M??e@AaB?qG?iAAiA?oB?kAAkCA{B?w@~B?lB@lCAzB@vE?z@?hA?hNCT?pA?X?N?X?V?\\?Z?NIPAP?~A?zA?J?RAF?zA?b@@z@?F?fC?~B?hB?N@b@?hAAxA?N?l@?l@?XAT?n@CJA\\A`@Gr@QHAVG^Mf@WB?XQFEJG^[LKn@o@@AHIf@o@pA}At@}@f@e@JKXWNKXSl@]p@W`AYr@Mh@Cj@C|E?Z?R?lACpAClD?RAjBAb@AL?R?h@AV?f@Ar@AhA?F?nCBp@?R@J?H?J?N@L?FFHH`BBn@AjA?L?D?L?J?VAPHJDFDFFDDBFDNAn@?bA?bB?V?|C?L?LAdA?\\?v@?N?PA^?pAAp@?fB?`@?X?dA?~BA~D?zD?rC?t@AhB?b@?tA@vB?`A?P?b@Af@?lA?lBAzA?`@?N?Z?N?L?f@?Z?|AJ?H?fACDBd@TB@PLp@XjB`ADLZPPJb@XVTXXT\\Zl@BLBDJXLVLVPRBBLLRPTJVHTFH@H@D?T@NADATCDCbA]XIVENAF?VAVBZF\\HPHJDXNB?ZRHFLJPLHF`@`@^`@\\b@NRZj@\\p@^v@f@dAVh@HNh@jAHNl@pAdAzB`AvBx@rBj@xATr@p@pBZjA^vAT~@Rv@Lj@^hBJ`@Ll@Lj@Hb@Ll@l@nCTbAVlAt@pDR|@R|@f@zBBLb@tBc@RURIJCF?HBXLd@Me@CY?IBGHKTSb@SVlA^vAFNn@zAv@fBJ\\Nd@Nn@Nv@N~@BPRnAJ`@H\\DJPf@N^BFNZDHV`@HLr@nAHLb@n@BDX^F`@BN?J?LCHETQPQNQP_@^e@^[VE@]R_@P]JC@QDMDc@Fa@DK@K?G@I?qA@{BAS?y@?o@?yE@w@?G?{@AI?K@_C?wA@{@?W?aA?uC?e@?e@?gA?K?kB?I?sA?y@?Y?E?IAG?[EQCGAYKYMWOWSIIWWSQCCcA}@YWa@]]S[MSIKCICICKAICKAI?IAK?O?Y?i@@E?Y?m@@M@OJG?G?O@?\\?D?X?\\?fA?V@xA@z@?b@BxB@jD@zA?xB?tD@jD?r@?z@@vGAjH@|@?v@?jAKf@IRKJMJUH{@Ag@As@?SAaACU?aFEmCCe@AoEEoCAcDEuDE[?oGIcNSaFGq@?e@AkCC?vA?^?~@?pE@tA?\\@j@@xAuABo@BgBD_@@S?aD?yF@eA?}@@{B?S?]?[?kBAmAE_@AqDEyFB{@@gDBeOA[M_DO]CSA_@AI?}@A}@Ac@?S?WA?\\?~A@Z?~B?xAAhB?r@?VCxAE`EA`JF`GDLBnBBnB@xA?bD?`A?nH?rF@nKF`H@bB@lBGzDAfB?Z?TAv@EjE?BClB?V?|@?zG?^ApA@xG?N@t@@n@@~A@^BhBEN?RA|@?p@?|CAjA?z@?vA?\\?VARAnD?d@Al@At@A\\AdACdA?ZEzAAv@Cd@?H@TAx@?rA?Z?N?pD?X?pE?nA?fA@H@zC@b@@n@DjBD`B@vFAhB?j@?vA?z@?J?bA?N?X?R@f@?|D?tB?dA?lAAL@NErC@Z?n@?p@AL?d@A~AmBAoA?MA_@?mBBcA@AOCqD",
+        "pickup": null,
+        "delivery": null,
+        "priority": 0,
+        "service": 3600,
+        "vehicle_overtime": null,
+        "waiting_time": 26450,
+        "setup": 0,
+        "revenue": null,
+        "profile": "default",
+        "adopted_capacity": null,
+        "internal_id": 873244444
+      },
+      {
+        "vehicle": "2",
+        "cost": 1763,
+        "steps": [
+          {
+            "id": 0,
+            "type": "start",
+            "arrival": 1749582000,
+            "duration": 0,
+            "location": [
+              40.016588,
+              -105.224365
+            ],
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 0,
+            "snapped_location": [
+              40.01684,
+              -105.22438
+            ],
+            "run": null,
+            "depot": "0",
+            "internal_id": null
+          },
+          {
+            "id": 1,
+            "type": "break",
+            "arrival": 1749582000,
+            "duration": 0,
+            "location": null,
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": "Lunch Break",
+            "distance": 0,
+            "snapped_location": null,
+            "run": null,
+            "depot": null,
+            "internal_id": 1
+          },
+          {
+            "id": "4",
+            "type": "job",
+            "arrival": 1749582575,
+            "duration": 575,
+            "location": [
+              39.989159,
+              -105.246724
+            ],
+            "projected_location": null,
+            "location_index": 3,
+            "load": null,
+            "service": 1800,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 6484,
+            "snapped_location": [
+              39.98908,
+              -105.24653
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 822911587
+          },
+          {
+            "id": "7",
+            "type": "job",
+            "arrival": 1749584974,
+            "duration": 1174,
+            "location": [
+              40.024973,
+              -105.251153
+            ],
+            "projected_location": null,
+            "location_index": 6,
+            "load": null,
+            "service": 1800,
+            "waiting_time": 7826,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 13915,
+            "snapped_location": [
+              40.02513,
+              -105.25111
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 839689206
+          },
+          {
+            "id": "8",
+            "type": "job",
+            "arrival": 1749594859,
+            "duration": 1433,
+            "location": [
+              40.01513,
+              -105.247494
+            ],
+            "projected_location": null,
+            "location_index": 7,
+            "load": null,
+            "service": 1800,
+            "waiting_time": 15941,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 16289,
+            "snapped_location": [
+              40.01521,
+              -105.24714
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 1024243015
+          },
+          {
+            "id": 0,
+            "type": "end",
+            "arrival": 1749612930,
+            "duration": 1763,
+            "location": [
+              40.016588,
+              -105.224365
+            ],
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 18630,
+            "snapped_location": [
+              40.01684,
+              -105.22438
+            ],
+            "run": null,
+            "depot": "0",
+            "internal_id": null
+          }
+        ],
+        "description": "Vehicle 2 (max 3 jobs)",
+        "distance": 18630,
+        "duration": 1763,
+        "geometry": "gxfsFjsfaSAuAh@@R?j@?R?z@BH?H?P?fEA@Z?n@?p@AL?d@A~A?`@?z@?`A?X?v@?l@?f@?@?tB?pB?rA?tB?~@ArB?xC?h@A`AAtBCxDArB?xA?TA~@?tAAvA@~A?x@?nA?R?hA@~@C~C@~C?F?^@ZBt@FxABx@DpB?T?VPGLEpA_@h@IZGRCx@Gp@CRCT?ZA`A?x@BX@P@v@@~@@l@@hAC`@AD?v@G`@GLC`@GZGl@QNEXKj@ShB{@DEDCbBkA`@WFElAcAFGJIFE\\W|BiBb@]|Q}NnEkDDCfBqA~@s@b@[z@o@HE\\U~AqANIJI^Sh@[LGPIhBy@TKRIPGl@Qn@On@Kp@IF?h@Er@CfA@fB?N?vA@dA?bJ?lA?F?D?fD@F?`E@J?pC?L?Z?pC@nA?f@@Z?PB^@^D\\HZHTHh@PhBp@PVHN@D@B??BJBH?HD\\Bp@@Z@NBNBPBRFZH\\JXPf@HXHPFXL\\Z|@Tp@J^Nf@H\\Hb@F`@Df@Fb@HfA@H@T?\\@zA@vB?`@?zD?P?V?lA?xA?t@DP?z@?X?p@?h@{A@cCBQDUNSVi@fAuAtCwArCwApCuArCwArClBfB@@AAmBgBvAsCtAsCvAqCvAsCtAuCh@gARWTOPEbCCzAA?i@?q@?Y?{@FQ@}BBgA?Y?UAkB?K?kA?y@?iB?y@Aw@?S?WI}@Eq@Gg@E]Km@G[EM?CEMUs@K[i@}AK_@K[EOk@eBCMIUE[Co@AM?E?U?M@e@@O@MBW@KBQDS@C?ADUJ[DQHUBMBGFWt@sC`@}@DIFGJKLGLCN?PDNHHFLXDN@N?PALCNEPIPMRIHIJKHGFCDOJYNWJ[Hc@LI?S@O@M?_@@{@?E?_@?U?mAEoDAg@?aC?SA{B?_DAmEAuA?}A?U?iNCkB?{B?gAAS@S?S@S@S@SBSBSBSBg@HSDQDa@JWHSFQFSHMFC@gAh@[P_@R]VMHOJu@d@a@Xu@h@}BbBq@h@]X]XONiY`Uy@n@uAhAa@Zy@p@i@`@WP]VWTA@{@j@OHGBEDw@^QHc@Rg@Pm@Pm@Nk@He@Fi@Fm@Bi@@u@?u@?o@Cw@Am@ASA]?q@A]?Q?O?c@@_@@A?S@c@Bg@Fk@Hc@JUDm@NODOFe@P_@PQJ_@RqAr@WN_@REBYPsBlAWNkAt@yFfDc@Xs@`@k@Zg@ZMFWLk@XSFqAf@KDi@Pg@H[Hg@?u@COAg@MUKc@[g@]c@YCCg@WYMKQEICEAAACACAC?CAC?EAEAICWD_@D]Fe@DSKEKEEZAFIn@CPA\\ElAANArA?V?b@?~@?N@JAN?V?v@?lAAtA?hA@Z?`@?dBA^E`BObBMhAIb@Id@Kb@ETK`@]v@Qf@Md@EXABGh@AXA`@?^@f@F|@NTLfAeBJW@S?MCOGIGCAOMW]Q]IQYs@MOEIDO?E?DENDHLNXr@HPP\\V\\NLB@HFNFLBR?VAdBKMgAFYEiA?i@@[@_@Hy@Lu@Tq@Ti@J[FYFW^{BV_DF}A?s@@gC?IAoAFS@C@EDIBGBEDGBCBCRINCFAHAHCb@Wt@i@h@c@NKBCFCl@]d@On@[^Ih@Kh@KjAe@JEh@Ud@Wd@UbB_AjAs@zFiDzA}@NIrBoAZS\\SBA`@Sn@Wb@Sb@AD@F@F@DDBB@BBBLf@Br@@n@AV@R?PAX@bABz@?b@AnB@rA?b@?r@?L?X?^?|AArBERERELCHKH[HKA[KGCKXMZW^KHOHDLDRAJb@A\\?]?c@@@KESEMNIJIV_@L[NHRFP@`AHJ?NA@]?yA@wA?eA?_A?M?cB?s@?aA?u@?_B?q@?a@Ac@?oA?O?qBCiB?W?UE_B?ICu@CwAC{@Ak@AYCwC?_D?_A?a@A}@?u@?oD?yA?qC@aA?m@?oAD}E@}C@aF@aCAq@?aA?w@?O?_A?{B@q@?a@?i@?a@Ag@?c@?Q?WAm@?U@y@@a@OAK@mBAoA?MA_@?mBBcA@AOCqD",
+        "pickup": null,
+        "delivery": null,
+        "priority": 0,
+        "service": 5400,
+        "vehicle_overtime": null,
+        "waiting_time": 23767,
+        "setup": 0,
+        "revenue": null,
+        "profile": "default",
+        "adopted_capacity": null,
+        "internal_id": 923577301
+      },
+      {
+        "vehicle": "3",
+        "cost": 2386,
+        "steps": [
+          {
+            "id": 0,
+            "type": "start",
+            "arrival": 1749563383,
+            "duration": 0,
+            "location": [
+              40.016588,
+              -105.224365
+            ],
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 0,
+            "snapped_location": [
+              40.01684,
+              -105.22438
+            ],
+            "run": null,
+            "depot": "0",
+            "internal_id": null
+          },
+          {
+            "id": "11",
+            "type": "job",
+            "arrival": 1749564000,
+            "duration": 617,
+            "location": [
+              40.043212,
+              -105.252655
+            ],
+            "projected_location": null,
+            "location_index": 10,
+            "load": null,
+            "service": 1800,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 6557,
+            "snapped_location": [
+              40.04309,
+              -105.25266
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 485174231
+          },
+          {
+            "id": "2",
+            "type": "job",
+            "arrival": 1749566212,
+            "duration": 1029,
+            "location": [
+              40.068497,
+              -105.288575
+            ],
+            "projected_location": null,
+            "location_index": 1,
+            "load": null,
+            "service": 1800,
+            "waiting_time": 8588,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 11261,
+            "snapped_location": [
+              40.0685,
+              -105.28857
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 923577301
+          },
+          {
+            "id": 1,
+            "type": "break",
+            "arrival": 1749577134,
+            "duration": 1563,
+            "location": null,
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 1266,
+            "setup": 0,
+            "late_by": null,
+            "description": "Lunch Break",
+            "distance": 11261,
+            "snapped_location": null,
+            "run": null,
+            "depot": null,
+            "internal_id": 1
+          },
+          {
+            "id": "10",
+            "type": "job",
+            "arrival": 1749578400,
+            "duration": 1563,
+            "location": [
+              40.020195,
+              -105.280964
+            ],
+            "projected_location": null,
+            "location_index": 9,
+            "load": null,
+            "service": 1800,
+            "waiting_time": 10800,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 17028,
+            "snapped_location": [
+              40.02028,
+              -105.28105
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 468396612
+          },
+          {
+            "id": "9",
+            "type": "job",
+            "arrival": 1749591150,
+            "duration": 1713,
+            "location": [
+              40.018777,
+              -105.279057
+            ],
+            "projected_location": null,
+            "location_index": 8,
+            "load": null,
+            "service": 1800,
+            "waiting_time": 12450,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 17776,
+            "snapped_location": [
+              40.01881,
+              -105.27889
+            ],
+            "run": null,
+            "depot": null,
+            "internal_id": 1007465396
+          },
+          {
+            "id": 0,
+            "type": "end",
+            "arrival": 1749606073,
+            "duration": 2386,
+            "location": [
+              40.016588,
+              -105.224365
+            ],
+            "projected_location": null,
+            "location_index": 0,
+            "load": null,
+            "service": 0,
+            "waiting_time": 0,
+            "setup": 0,
+            "late_by": null,
+            "description": null,
+            "distance": 23747,
+            "snapped_location": [
+              40.01684,
+              -105.22438
+            ],
+            "run": null,
+            "depot": "0",
+            "internal_id": null
+          }
+        ],
+        "description": "Vehicle 3 (max 4 jobs)",
+        "distance": 23747,
+        "duration": 2386,
+        "geometry": "gxfsFjsfaSAuAh@@R?j@?R?z@BH?H?P?fEA@Z?n@?p@AL?d@A~A?`@?z@?`A?X?v@?l@?f@?@?tB?pB?rA?tB?~@ArB?xC?h@A`AAtBCxDArB?xA?TA~@?tAAvA@~A?x@?nA?R?hA@~@C~C@~C?F?^@ZBt@FxAKz@KlAGTm@z@_@RqAr@WN_@REBYPsBlAWNkAt@yFfDc@Xs@`@k@Zg@ZMFWLk@XSFqAf@KDi@Pg@H[Ho@Lw@LQBu@HmAH_ABi@@k@?G?M?a@AsDAo@@Q?_AAO?_A?UA]?_@?a@?mCAa@?a@?aCAS?iA@_@?gB@i@?qAAW??f@?Z@\\?N?d@?R?h@?l@@dB?\\@X?\\HT@p@?j@AjD@jA?dA?l@A|A?N?N?fA?`A?Z@rA?dA?xB?j@?^?l@@V?N?Z?bA?V?P?t@?H?p@@`@?@@`@Bh@Bf@Bf@?PApAA~@?tA?T?d@?\\EN?T?V?^?|@?Z?LK`@ADCFCDCBEDKJWL[?Q?W?M@_@@]?c@?U@KH_@?_@?_@?wA@s@AW@OAK?OIi@A}@@g@GmA?{B?Q?y@?yA?mC?g@?o@@W?W?k@?[@M?S@m@@i@@mB?s@?qE@U?e@@UJW?q@@yA??U@sA?_@?_@?iA@q@?kB@{@?_G?YAaC?QCw@?gB[@mA?cA@k@?gA?[?KCQKMGOGOAm@@_B?[@MEKKCOAM?e@?d@cA@m@?Y??|A?t@BR?h@P`CBp@?pA@tD@pB@fC?b@?dAUtAADABA@ABC@EDGBWJkC?qA?m@?}@?oCB_@?o@@iA@U?i@B}AH[ScCj@mA^u@Ps@XeA`@YLw@d@w@d@gAv@k@\\oAdAQTe@h@sAhBu@jA_@l@Y`@w@|A}BdEw@rAcAnBSd@MVUd@S^i@~@u@pAa@v@yAtCAB?HU`@oA`Cc@x@mDtGe@`AOJw@tAGHa@v@_@r@INKRW`@cAtBcCvEiApBi@bAaCpE]j@k@fAMVYh@_@p@[j@KRYf@EJu@tAOXmFbKMRm@bAc@v@SZ[^UZ{@fAg@j@MNc@d@ERALA^FLBPHPPNVPKVGHEFKB_@DWDQDMJMRCNAJ?BApA?~@?zCAH?DGLEHOReB`CUZc@n@Yj@ELI^AT?T?bEmB?E@O@MD[JYHSHIDGFIFEFGHEJCJAJAJAL?J@PBHHh@g@PMFIDIFEFGFAD@EFGDGHGHELGf@Qn@SrAc@lBq@VECqB?cE?U@UH_@DMXk@b@o@T[dBaCNSDIFM?E@I?{C?_A@qA?C@KBOLSLKPEVE^EJCLAHEPIHERFNDZD^B^?JANKX?LAL?X?R?j@AX?^?tB?H?N?dA?dA@d@?R?x@?L?N?~C?J?H?t@?T?N?h@@f@?N?^?P?L?^?`@@NAj@?H?`AAf@?tA?X?TAlA?^?v@?nA?TAR?Z?F?Z?fA@|@A|@?Z?rC?TA\\?lB?`C?xA@Z@h@?VBdCDX?\\?tACn@Aj@AZA^At@At@AX?P?|A?V?ZAR?jA?d@?|A?B?|@?^?L?rAA~@?hB?f@?n@?H?F?fBAhF@b@?V@T?jB?lA?r@AJ?n@?x@?j@?hAAx@@h@?\\?\\?L?d@?N@`A?bA?^?R?XA|A?F?H?xD?rA?R?vC?T?v@?bB?T?p@?`A?b@?x@?tC?D?j@@vB@p@?V?tA@pA?\\?p@?P?xC?VAZ?l@?t@AH?`@?v@@~@A\\?`@ArA?^AlBAL?T?~@Ap@AL?^CJAZEZGTEFCNC\\KREp@QjAYd@K`@K~@SLETEn@QdBa@~A_@Hd@V@WAIe@\\IlAYXGb@KTGLC`AUd@MdBa@`@KZI`@K^IPEv@SdBe@Ku@g@mEo@Pw@RgBb@cB\\[HC?]Hg@LcB^cBd@u@aGS_B]qC@CBE?E?E?CCEGAA@K}@e@}DbBa@dBc@dBc@`Bc@QyAEWE]UsBSaBIm@CWS_BSeBa@_DQuAIu@EUMeAKy@CSMgAKw@OsAKy@S_BGi@Gc@Gg@Gi@MiAQmAK{@MkAWkBOsAIo@E[CUIe@@a@?KCQEYIu@SwAEi@WkB]uCYcCYmBIq@K{@Im@OuACMAOE[Mq@G{@SSOyAKs@ASSyAe@yDOqAGa@Kw@CYWkBCSEYIq@Ky@Ge@E]CWKo@Gk@MgAFYEiA?i@@[@_@Hy@Lu@Tq@Ti@J[FYFW^{BV_DF}A?s@@gC?IAoAFS@C@EDIBGBEDGBCBCRINCFAHAHCb@Wt@i@h@c@NKBCFCl@]d@On@[^Ih@Kh@KjAe@JEh@Ud@Wd@UbB_AjAs@zFiDzA}@NIrBoAZS\\SBA`@Sn@Wb@Sd@QXMVMPGLE?W?UE_B?ICu@CwAC{@Ak@AYCwC?_D?_A?a@A}@?u@?oD?yA?qC@aA?m@?oAD}E@}C@aF@aCAq@?aA?w@?O?_A?{B@q@?a@?i@?a@Ag@?c@?Q?WAm@?U@y@@a@OAK@mBAoA?MA_@?mBBcA@AOCqD",
+        "pickup": null,
+        "delivery": null,
+        "priority": 0,
+        "service": 7200,
+        "vehicle_overtime": null,
+        "waiting_time": 33104,
+        "setup": 0,
+        "revenue": null,
+        "profile": "default",
+        "adopted_capacity": null,
+        "internal_id": 906799682
+      }
+    ],
+    "routing_profiles": {
+      "default": {}
+    },
+    "error": null
+  },
+  "status": "Ok",
+  "message": ""
+}
