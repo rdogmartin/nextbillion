@@ -1,0 +1,169 @@
+{
+   "description": "Scenario 6: 10 jobs on June 10, 2025, 1 or 2-hr time windows, 3 vehicles, 2, 3 or 4 max jobs per vehicle, 1 depot, 11 locations, 1 lunch break, start and end at depot, no skills, no shipments",
+   "jobs": [
+       {
+           "id": "2",
+           "location_index": 1,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749574800, 1749582000]]
+       },
+       {
+           "id": "3",
+           "location_index": 2,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749571200, 1749574800]]
+       },
+       {
+           "id": "4",
+           "location_index": 3,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749582000, 1749589200]]
+       },
+       {
+           "id": "5",
+           "location_index": 4,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749564000, 1749571200]]
+       },
+       {
+           "id": "6",
+           "location_index": 5,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749600000, 1749603600]]
+       },
+       {
+           "id": "7",
+           "location_index": 6,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749592800, 1749600000]]
+       },
+       {
+           "id": "8",
+           "location_index": 7,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749610800, 1749614400]]
+       },
+       {
+           "id": "9",
+           "location_index": 8,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749603600, 1749610800]]
+       },
+       {
+           "id": "10",
+           "location_index": 9,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749589200, 1749592800]]
+       },
+       {
+           "id": "11",
+           "location_index": 10,
+           "service": 1800,
+           "pickup": [],
+           "skills": [],
+           "time_windows": [[1749560400, 1749564000]]
+       }
+   ],
+   "shipments": [
+   ],
+   "depots": [
+       {
+           "description":"Main Office",
+           "id":"0",
+           "location_index":0
+       }
+   ],
+   "vehicles": [
+       {
+           "id": "1",
+           "description": "Vehicle 1 (max 2 jobs)",
+           "start_depot_ids": ["0"],
+           "end_depot_ids": ["0"],
+           "capacity": [],
+           "skills": [],
+           "time_window": [1749560400, 1749614400],
+           "max_tasks": 2,
+           "breaks": [
+            {
+                "id": 1,
+                "description": "Lunch Break",
+                "service": 1800,
+                "time_windows": [[1749578400, 1749582000]]
+            }
+           ]
+       },
+       {
+           "id": "2",
+           "description": "Vehicle 2 (max 3 jobs)",
+           "start_depot_ids": ["0"],
+           "end_depot_ids": ["0"],
+           "capacity": [],
+           "skills": [],
+           "time_window": [1749560400, 1749614400],
+           "max_tasks": 3,
+           "breaks": [
+            {
+                "id": 1,
+                "description": "Lunch Break",
+                "service": 1800,
+                "time_windows": [[1749578400, 1749582000]]
+            }
+           ]
+       },
+       {
+           "id": "3",
+           "description": "Vehicle 3 (max 4 jobs)",
+           "start_depot_ids": ["0"],
+           "end_depot_ids": ["0"],
+           "capacity": [],
+           "skills": [],
+           "time_window": [1749560400, 1749614400],
+           "max_tasks": 4,
+           "breaks": [
+            {
+                "id": 1,
+                "description": "Lunch Break",
+                "service": 1800,
+                "time_windows": [[1749578400, 1749582000]]
+            }
+           ]
+       }
+   ],
+   "locations": {
+       "id": 1,
+       "location": [
+           "32.738556,-96.808891",
+           "32.739761,-96.808838",
+           "32.736237,-96.808624",
+           "32.758186,-96.847885",
+           "32.74474,-96.843163",
+           "32.759552,-96.856354",
+           "32.75848,-96.845551",
+           "32.759113,-96.85112",
+           "32.746723,-96.805656",
+           "32.752541,-96.842613",
+           "32.74033,-96.804855",
+           "32.737473,-96.803307",
+           "32.742046,-96.803368",
+           "32.736156,-96.808121"
+       ]
+   }
+}

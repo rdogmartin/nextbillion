@@ -1,0 +1,75 @@
+{
+  "model": {
+    "shipments": [
+      {
+        "displayName": "Job 0",
+        "deliveries": [
+          {
+            "arrivalLocation": {
+              "latitude": 40.068497,
+              "longitude": -105.288575
+            },
+            "timeWindows": [
+              {
+                "startTime": "2025-06-10T14:00:00Z",
+                "endTime": "2025-06-10T15:00:00Z"
+              }
+            ],
+            "duration": "5400s"
+          }
+        ]
+      },
+      {
+        "displayName": "Job 1",
+        "deliveries": [
+          {
+            "arrivalLocation": {
+              "latitude": 39.967318,
+              "longitude": -105.252806
+            },
+            "timeWindows": [
+              {
+                "startTime": "2025-06-10T14:00:00Z",
+                "endTime": "2025-06-10T15:00:00Z"
+              }
+            ],
+            "duration": "5400s"
+          }
+        ]
+      }
+    ],
+    "vehicles": [
+      {
+        "displayName": "Vehicle 1",
+        "startLocation": {
+          "latitude": 40.016588,
+          "longitude": -105.224365
+        },
+        "endLocation": {
+          "latitude": 40.016588,
+          "longitude": -105.224365
+        },
+        "startTimeWindows": [
+          {
+            "startTime": "2025-06-10T14:00:00Z",
+            "endTime": "2025-06-10T14:15:00Z"
+          }
+        ],
+        "endTimeWindows": [
+          {
+            "startTime": "2025-06-11T05:45:00Z",
+            "endTime": "2025-06-11T06:00:00Z"
+          }
+        ]
+      }
+    ],
+    "objectives": [
+      {
+        "type": "default",
+        "weight": 1.0
+      }
+    ],
+    "globalStartTime": "2025-06-10T14:00:00Z",
+    "globalEndTime": "2025-06-11T06:00:00Z"
+  }
+}

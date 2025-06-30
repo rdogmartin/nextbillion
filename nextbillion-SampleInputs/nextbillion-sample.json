@@ -1,0 +1,109 @@
+{
+   "description": "Basic Route Optimization Example",
+   "jobs": [
+       {
+           "id": "1",
+           "location_index": 0,
+           "service": 120,
+           "pickup":[1],
+           "skills": [1],
+           "time_windows": [[1693393200, 1693394100]]
+       },
+       {
+           "id": "2",
+           "location_index": 1,
+           "service": 120,
+           "skills": [1],
+           "pickup":[1],
+           "time_windows": [[1693387800, 1693388700]]
+       },
+       {
+           "id": "3",
+           "location_index": 2,
+           "service": 120,
+           "pickup":[1],
+           "skills": [2],
+           "time_windows": [[1693396800, 1693397700]]
+       },
+       {
+           "id": "4",
+           "location_index": 3,
+           "service": 120,
+           "skills": [1],
+           "pickup":[1],
+           "time_windows": [[1693402200, 1693403100]]
+       },
+       {
+           "id": "5",
+           "location_index": 4,
+           "service": 120,
+           "skills": [2],
+           "pickup":[1],
+           "time_windows": [[1693400400, 1693401300]]
+       }
+   ],
+   "shipments": [
+       {
+        "pickup":{
+           "description": "Shipment Pickup 1",
+           "id":"1",
+           "location_index":5,
+	        "time_windows":[[1693397400,1693397760]]
+        },
+        "delivery":{
+           "description": "Shipment Delivery 1",
+           "id":"1",
+           "location_index":6,
+            "time_windows":[[1693400700,1693401300]]
+        },
+        "skills":[2,3],
+        "amount":[3]
+        },
+        {
+         "pickup":{
+           "description": "Shipment Pickup 2",
+           "id":"2",
+           "location_index":7,
+           "time_windows":[[1693429200,1693430100]]
+        },
+        "delivery":{
+           "description": "Shipment Delivery 2",
+           "id":"2",
+           "location_index":8,
+           "time_windows":[[1693432800,1693433700]]
+        },
+        "skills":[2,3],
+        "amount":[2]
+       }
+   ],
+   "depots": [
+       {
+           "description":"Depot 1",
+           "id":"0",
+           "location_index":9
+       }
+   ],
+   "vehicles": [
+       {
+           "id": "1",
+           "start_index": 10,
+           "skills":[1],
+           "capacity":[10],
+           "time_window": [1693382400, 1693411200]
+       },
+       {
+           "id": "2",
+           "start_depot_ids": ["0"],
+           "skills": [
+               2,3
+           ],
+           "capacity":[10],
+           "time_window": [1693382400, 1693411200]
+       }
+   ],
+    "locations":
+        {
+            "id": 1,
+            "location": ["34.083950,-118.318640","34.054927,-118.323726","34.075525,-118.361588","34.076350,-118.338519","34.090425,-118.338933","34.076646,-118.376969","34.094986,-118.300885","34.018780,-118.317919","33.996658,-118.261708","34.059244,-118.376969","34.057106,-118.361326"]
+        }
+}
