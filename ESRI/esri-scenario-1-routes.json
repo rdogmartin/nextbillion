@@ -1,0 +1,12 @@
+{
+  "features": [
+    {
+      "attributes": {
+        "Name": "Route 1",
+        "Description": "vehicle 1",
+        "StartDepotName": "Main Office",
+        "EndDepotName": "Main Office"
+      }
+    }
+  ]
+}

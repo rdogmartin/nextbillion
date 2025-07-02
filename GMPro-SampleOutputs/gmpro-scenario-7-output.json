@@ -184,8 +184,8 @@
                 "performedMandatoryShipmentCount": 5
             },
             "routeCosts": {
-                "model.vehicles.cost_per_hour": 255,
                 "model.vehicles.cost_per_kilometer": 7.3572000000000006,
+                "model.vehicles.cost_per_hour": 255,
                 "model.vehicles.cost_per_traveled_hour": 27.666666666666668
             },
             "routeTotalCost": 290.02386666666666,
@@ -215,9 +215,9 @@
         "latestVehicleEndTime": "2025-06-10T22:45:00Z",
         "totalCost": 592.58906666666667,
         "costs": {
-            "model.vehicles.cost_per_traveled_hour": 65.191666666666663,
+            "model.vehicles.cost_per_hour": 510,
             "model.vehicles.cost_per_kilometer": 17.3974,
-            "model.vehicles.cost_per_hour": 510
+            "model.vehicles.cost_per_traveled_hour": 65.191666666666663
         }
     }
 }

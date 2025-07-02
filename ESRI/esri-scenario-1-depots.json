@@ -1,0 +1,15 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "x": -105.224365,
+        "y": 40.016588
+      },
+      "attributes": {
+        "Name": "Main Office",
+        "TimeWindowStart1": "1722520800",
+        "TimeWindowEnd1": "1722553200"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "features",
+  "features": [
+    {
+      "attributes": {
+        "Name": "Location 1",
+        "ServiceTime": 90,
+        "TimeWindowStart1": 1722520800,
+        "TimeWindowEnd1": 1722524400
+      },
+      "geometry": {
+        "x": -105.288575,
+        "y": 40.068497
+      }
+    },
+    {
+      "attributes": {
+        "Name": "Location 2",
+        "ServiceTime": 90,
+        "TimeWindowStart1": 1722520800,
+        "TimeWindowEnd1": 1722524400
+      },
+      "geometry": {
+        "x": -105.252806,
+        "y": 39.967318
+      }
+    }
+  ]
+}

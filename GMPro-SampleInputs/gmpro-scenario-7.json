@@ -279,7 +279,7 @@
     ],
     "objectives": [
       {
-        "type": "default",
+        "type": "min_num_vehicles",
         "weight": 1.0
       }
     ],
